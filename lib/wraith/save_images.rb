@@ -98,6 +98,9 @@ class Wraith::SaveImages
       options = Selenium::WebDriver::Chrome::Options.new
       [
         '--whitelisted-ips=',
+        '--enable-logging=stderr',
+        '--v=1',
+        '--log-level=0',
         'disable-gpu',
         'headless',
         'no-sandbox',
