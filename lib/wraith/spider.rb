@@ -37,7 +37,7 @@ class Wraith::Spider
   end
 
   def add_path(path)
-    @paths[path == "/" ? "home" : path.gsub("/", "__").chomp("__").downcase] = path.downcase
+    @paths[path == "/" ? "home" : path.gsub("/", "__").chomp("__").downcase] = path
   end
 
   def write_file
